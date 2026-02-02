@@ -187,3 +187,26 @@ footer a:hover {
     margin: 10px 0;
   }
 }
+
+.btn-card {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.btn-card button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background 0.3s;
+}
+
+.btn-card button:hover {
+  background: #2980b9;
+}
+

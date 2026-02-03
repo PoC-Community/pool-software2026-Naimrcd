@@ -3,6 +3,29 @@ function Header() {
   )
 }
   
+interface ButtonProps {
+  texte: string
+  couleur: string
+}
+
+function Button({ texte, couleur }: ButtonProps) {
+  return (
+    <button 
+      style={{
+        padding: '15px 30px',
+        background: couleur,
+        color: 'white',
+        border: 'none',
+        borderRadius: '10px',
+        fontSize: '16px',
+        cursor: 'pointer',
+        margin: '10px'
+      }}
+    >
+      {texte}
+    </button>
+  )
+}
 
 function App() {
   
@@ -13,7 +36,12 @@ function App() {
     
     <div style={{ padding: '50px', textAlign: 'center' }}>
       
-      <Header /> 
+      <Header />
+      <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', margin: '30px 0' }}>
+  <Button texte="Clique Vert" couleur="green" />
+  <Button texte="Clique Rouge" couleur="red" />
+</div>
+
 
       
       <p>Bonjour <strong>{nom}</strong> !</p>
